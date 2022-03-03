@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 6</title>
+</head>
+
+<body>
+    <div id="result"></div>
+    <script>
+        // bài 6: tìm chữ có độ dài dài nhất
+        var text = 'công ty cổ phẩn rikkeiSoft'
+        var arrayText = text.split(" ");
+        var checkLength = arrayText[0];
+        for (let i = 1; i < arrayText.length; i++) {
+            if (arrayText[i].length > checkLength.length) {
+                checkLength = arrayText[i];
+            }
+        }
+        document.getElementById("result").innerHTML = checkLength;
+    </script>
+</body>
+
+</html>
